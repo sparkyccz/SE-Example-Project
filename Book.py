@@ -13,7 +13,7 @@ class Book:
     # verify that the category is valid
     def setCategory(self, category):
         # non-fiction, fiction, reference
-        if category in ["non-fiction", "fiction", "reference"]:
+        if category.lower() in ["non-fiction", "fiction", "reference"]:
             self.__category = category
         else:
             print("Error: Unknown category")
